@@ -1,19 +1,19 @@
 {% set name = "eido" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 4d966065d432beeb6d4e5a64fbb70e4ce615572dbf7832b485874c17c4a94372
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e5fbe83b3dd9b2e6f652615b57a672f4485cf664a8380ad2095146579e524880
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
-  entry_points: 
+  script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
     - eido = eido.__main__:main
 
 requirements:
@@ -38,11 +38,11 @@ test:
     - pip check
 
 about:
-  home: "https://github.com/pepkit/eido"
-  license: "BSD-2-Clause"
-  license_family: "BSD"
-  license_file: "LICENSE.txt"
-  summary: "Validator for PEP objects"
+  home: https://github.com/pepkit/eido
+  license: BSD-2-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: Validator for PEP objects
 
 extra:
   recipe-maintainers:
