@@ -19,9 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >-3.6
   run:
-    - python
+    - python >-3.6
     - ubiquerg >=0.5.2
     - logmuse >=0.2.5
     - jsonschema >=3.0.1
