@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools >= 75.1.0
+    - setuptools >=75.1.0
   run:
     - python >=3.8
     - ubiquerg >=0.6.2
