@@ -1,5 +1,5 @@
 {% set name = "eido" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3966c8e91296189d5827d6415843eb300d204c9da9b8a780807ebc5403be2800
+  sha256: 0
 
 build:
   number: 0
@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
     - ubiquerg >=0.6.2
     - logmuse >=0.2.5
     - jsonschema >=3.0.1
-    - peppy >=0.35.1
+    - peppy >=0.40.6
 
 test:
   requires:
@@ -47,3 +47,4 @@ extra:
   recipe-maintainers:
     - stolarczyk
     - rafalstepien
+    - khoroshevskyi
