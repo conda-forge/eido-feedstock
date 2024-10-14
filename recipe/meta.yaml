@@ -31,8 +31,8 @@ requirements:
 test:
   requires:
     - pip
-  # imports:
-  #   - eido
+  imports:
+    - eido
   # commands:
   #   - eido --help
   #   - pip check
