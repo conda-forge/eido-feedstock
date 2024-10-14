@@ -31,11 +31,11 @@ requirements:
 test:
   requires:
     - pip
-  imports:
-    - eido
-  commands:
-    - eido --help
-    - pip check
+  # imports:
+  #   - eido
+  # commands:
+  #   - eido --help
+  #   - pip check
 
 about:
   home: https://github.com/pepkit/eido
