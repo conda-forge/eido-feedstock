@@ -1,5 +1,5 @@
 {% set name = "eido" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 38c21e8678a4e37e2b0680225dd4cabe68482b5156c252199838faa06d7adf47
+  sha256: 068a548adc07c9e244a7768fcb06940e484075f89ce0dd06e1167f2b8f9c44f4
 
 build:
   number: 0
